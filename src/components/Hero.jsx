@@ -31,23 +31,23 @@ const Hero = () => {
       yPercent: 100,
       duration: 1.8,
       ease: "expo.out",
-      stagger: 0.05,
-      delay: 1.5,
+      stagger: 0.06,
+      delay: 1,
     });
 
     gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
           start: "top top",
-          end: "bottom top",
+          end: "bottom -60%",
           scrub: true,
         }
       })
-      .to(".right-leaf", { y: 200 }, 0)
-      .to(".left-leaf", { y: -200 }, 0);
+      .to(".right-leaf", { y: 100 }, 0)
+      .to(".left-leaf", { y: -100 }, 0);
 
       const startValue = isMobile? 'top 50%':'center 55%'
-      const endValue = isMobile? '120% top':'bottom top'
+      const endValue = isMobile? '120% -30%':'bottom -20%'
 
       const tl = gsap.timeline({
         scrollTrigger:{
@@ -58,6 +58,7 @@ const Hero = () => {
           pin:true
         }
       })
+      //video animation 
 
       videoRef.current.onloadedmetadata = () => {
         tl.to(videoRef.current, {
@@ -95,7 +96,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className="video inset-0">
+      <div className="video inset-0 ">
         <video ref={videoRef} muted playsInline  src="/videos/output.mp4"></video>
 
       </div>
