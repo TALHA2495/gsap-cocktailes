@@ -53,7 +53,7 @@ const Hero = () => {
           trigger:'video',
           start:startValue,
           end:endValue,
-          scrub:1,
+          scrub:true,
           pin:true
         }
       })
