@@ -64,8 +64,8 @@ const cocktails = () => {
           </div>
         </div>
 
-        <img src="./images/cocktail-left-leaf.png" class="" alt="" id="c-left-leaf" />
-        <img src="./images/cocktail-right-leaf.png" class="" alt="" id="c-right-leaf" />
+        <img src="./images/cocktail-left-leaf.png"  alt="" id="c-left-leaf" />
+        <img src="./images/cocktail-right-leaf.png"  alt="" id="c-right-leaf" />
       </section>
     </>
   );

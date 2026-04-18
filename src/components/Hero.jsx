@@ -70,7 +70,7 @@ const Hero = () => {
   }, []);
   return (
     <>
-      <section id="hero" className="noisy">
+      <section id="hero" className="noisy ">
         <h1 className="title">MOJITO</h1>
         <img src="/images/hero-left-leaf.png" className="left-leaf" alt="" />
         <img src="/images/hero-right-leaf.png" className="right-leaf" alt="" />
