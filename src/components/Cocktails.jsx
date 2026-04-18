@@ -3,23 +3,25 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { cocktailLists, mockTailLists } from "../../constants";
 
-const cocktails = () => {
+const Cocktails = () => {
   useGSAP(() => {
     const isMobile = window.innerWidth < 768;
     const xDistance = isMobile ? 50 : 120;
-    const yDistance = isMobile ? 50 : 120;
+    const yDistance = isMobile ? 50 : 180;
 
     const parallaxTl = gsap.timeline({
       scrollTrigger: {
         trigger: "#cocktails",
         start: "top 30%",
-        end: "bottom 80%",
+        end: "bottom 70%",
         scrub: true,
       },
     });
+    
     parallaxTl.from("#c-left-leaf", { x: -xDistance, y: yDistance });
-
     parallaxTl.from("#c-right-leaf", { x: xDistance, y: yDistance });
+
+    
   });
   return (
     <>
@@ -71,4 +73,4 @@ const cocktails = () => {
   );
 };
 
-export default cocktails;
+export default Cocktails;

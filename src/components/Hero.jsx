@@ -8,7 +8,6 @@ import { useMediaQuery } from "react-responsive";
 const Hero = () => {
 
   const videoRef = useRef();
-  const tl = useRef();
   const isMobile = useMediaQuery({maxWidth:767})
 
 
@@ -43,8 +42,8 @@ const Hero = () => {
           scrub: true,
         }
       })
-      .to(".right-leaf", { y: 100 }, 0)
-      .to(".left-leaf", { y: -100 }, 0);
+      .to(".right-leaf", { y: 180 }, 0)
+      .to(".left-leaf", { y: -180 }, 0);
 
       const startValue = isMobile? 'top 50%':'center 55%'
       const endValue = isMobile? '120% -30%':'bottom top'
@@ -54,7 +53,7 @@ const Hero = () => {
           trigger:'video',
           start:startValue,
           end:endValue,
-          scrub:true,
+          scrub:1,
           pin:true
         }
       })

@@ -140,11 +140,11 @@ body {
         @apply relative min-h-dvh w-full  overflow-hidden;
 
         #c-left-leaf {
-            @apply absolute left-0 top-190 md:top-auto  md:w-fit w-1/3;
+            @apply absolute left-0 top-190 md:top-85  md:w-fit w-1/3;
         }
 
         #c-right-leaf {
-            @apply absolute right-0 top-100 md:top-auto md:w-fit w-1/3;
+            @apply absolute right-0 top-100 md:top-85 md:w-fit w-1/3;
         }
 
         .list {
