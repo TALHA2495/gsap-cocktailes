@@ -6,8 +6,8 @@ import { cocktailLists, mockTailLists } from "../../constants";
 const cocktails = () => {
   useGSAP(() => {
     const isMobile = window.innerWidth < 768;
-    const xDistance = isMobile ? 50 : 100;
-    const yDistance = isMobile ? 50 : 100;
+    const xDistance = isMobile ? 50 : 120;
+    const yDistance = isMobile ? 50 : 120;
 
     const parallaxTl = gsap.timeline({
       scrollTrigger: {
@@ -64,8 +64,8 @@ const cocktails = () => {
           </div>
         </div>
 
-        <img src="./images/cocktail-left-leaf.png"  alt="" id="c-left-leaf" />
-        <img src="./images/cocktail-right-leaf.png"  alt="" id="c-right-leaf" />
+        <img src="./images/cocktail-left-leaf.png"  alt="leaf-img" id="c-left-leaf" />
+        <img src="./images/cocktail-right-leaf.png"  alt="leaf-img" id="c-right-leaf" />
       </section>
     </>
   );
